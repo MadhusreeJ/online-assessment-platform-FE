@@ -5,7 +5,6 @@ import axios from "axios";
 import '../../styles/userHome.css'
 import { Chart as ChartJS, CategoryScale, LinearScale, BarElement, Title, Tooltip, Legend } from 'chart.js';
 
-// Register the necessary components
 ChartJS.register(CategoryScale, LinearScale, BarElement, Title, Tooltip, Legend);
 
 const Analysis = () => {
@@ -16,7 +15,7 @@ const Analysis = () => {
   useEffect(() => {
     const fetchExamsData = async () => {
       try {
-        const response = await axios.get(`${config.api}/exam/get-exams-with-scores`); // Replace with your API endpoint
+        const response = await axios.get(`${config.api}/exam/get-exams-with-scores`); 
         setExamsData(response.data);
       } catch (error) {
         setError(error.message);
@@ -26,7 +25,7 @@ const Analysis = () => {
     };
 
     fetchExamsData();
-  }, []); // Empty dependency array means this runs once when the component mounts
+  }, []); 
 
   if (loading) {
     return <div>Loading...</div>;
@@ -37,9 +36,8 @@ const Analysis = () => {
   }
 
   const handleLogout = () => {
-    // Perform logout logic here, like clearing session or token
-    localStorage.removeItem('authToken'); // Example
-    navigate('/'); // Redirect to login page
+    localStorage.removeItem('authToken'); 
+    navigate('/'); 
   };
 
 
@@ -47,13 +45,8 @@ const Analysis = () => {
     <div style={{marginLeft:200}}>
        <nav className="navbar bg-body-tertiary">
         <div className="container-fluid d-flex justify-content-between flex-wrap">
-          {/* Website Name */}
           <span className="navbar-brand mb-0 h1">TestSphere</span>
-
-          {/* Username */}
           <h5 className="username" style={{position:"absolute", paddingLeft:900}}>Admin</h5>
-
-          {/* Logout Button */}
           <button onClick={handleLogout} className="btn btn-danger btn-sm logout-btn" style={{width:80}}>
             Logout
           </button>
@@ -62,11 +55,8 @@ const Analysis = () => {
       <h1 style={{paddingTop:100}}>Exam Scores</h1>
       {examsData.map((exam) => {
         const { exam_id, exam_name, studentScores, max_score } = exam;
-
-        // Prepare data for the chart
         const labels = studentScores.map(student => student.name);
         const scores = studentScores.map(student => {
-          // Calculate percentage score
           return max_score > 0 ? (student.score / max_score) * 100 : 0;
         });
 
@@ -86,7 +76,7 @@ const Analysis = () => {
           scales: {
             y: {
               beginAtZero: true,
-              max: 100, // Set max Y-axis value to 100%
+              max: 100, 
               title: {
                 display: true,
                 text: 'Percentage (%)',

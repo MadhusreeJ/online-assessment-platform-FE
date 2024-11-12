@@ -1,0 +1,89 @@
+/* Login.css */
+
+/* Set the primary color as the background color for the page */
+body {
+    background-color: #f7f7f7;
+  }
+  
+  /* Header section */
+  h1.display-4 {
+    color: #5e0ec7;
+    font-weight: bold;
+  }
+  
+  h3.card-title {
+    color: #5e0ec7;
+  }
+  
+  /* Custom button styling for the Login button */
+  button.btn-success {
+    background-color: #5e0ec7;
+    border-color: #5e0ec7;
+  }
+  
+  button.btn-success:hover {
+    background-color: #4d0ba7; /* Darken the button on hover */
+    border-color: #4d0ba7;
+  }
+  
+  /* Custom styling for the Admin login button */
+  button.btn-outline-primary {
+    border-color: #5e0ec7;
+    color: #5e0ec7;
+  }
+  
+  button.btn-outline-primary:hover {
+    background-color: #5e0ec7;
+    color: white;
+    border-color: #5e0ec7;
+  }
+  
+  /* Card Styling */
+  .card {
+    border-radius: 10px;
+  }
+  
+  .card-body {
+    padding: 2rem;
+  }
+  
+  /* Form input focus color */
+  input.form-control:focus {
+    border-color: #5e0ec7;
+    box-shadow: 0 0 5px rgba(94, 14, 199, 0.5);
+  }
+  
+  /* Modal header with the primary color */
+  .modal-header {
+    background-color: #5e0ec7;
+    color: white;
+    border-radius: 10px 10px 0 0;
+  }
+  
+  /* Modal close button custom styling */
+  .modal-header .close {
+    color: white;
+    opacity: 1;
+  }
+  
+  /* Modal form styling */
+  .modal-body {
+    background-color: #f8f9fa;
+  }
+  
+  /* Error messages */
+  .text-danger {
+    color: #e74c3c;
+    font-size: 0.875rem;
+  }
+  
+  /* Footer and other links */
+  a {
+    color: #5e0ec7;
+  }
+  
+  a:hover {
+    color: #4d0ba7;
+    text-decoration: none;
+  }
+  

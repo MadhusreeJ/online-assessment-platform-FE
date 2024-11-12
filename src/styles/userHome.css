@@ -1,0 +1,131 @@
+/* UserHome.css */
+
+/* Page background color */
+body {
+    background-color: #f8f9fa;
+  }
+  
+  /* Navbar styling */
+  .navbar {
+    position: fixed; /* Fix navbar at the top */
+    top: 0;
+    left: 200px;
+    right: 0;
+    background-color: #5e0ec7; /* Purple background */
+    color: white; /* Default text color inside navbar */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1000;
+    padding-bottom: 20px;
+  }
+
+  
+  /* Website name styling */
+  .navbar .navbar-brand {
+    font-weight: bold;
+   
+    color: #5e0ec7; /* Change to black for better contrast */
+  }
+  
+  /* Username styling */
+  .username {
+    color: #5e0ec7 !important;  /* Ensure the username is black */
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin-right: 20px; /* Space between username and logout button */
+  }
+  
+  /* Username hover effect */
+  .username:hover {
+    color: #e74c3c;  /* Optional: Add a hover effect for interactivity */
+  }
+  
+  /* Logout Button Styling */
+  .logout-btn {
+    background-color: #e74c3c;
+    border-color: #e74c3c;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+    color: white;  /* Make sure the text is white */
+  }
+
+  .logout-btn:hover {
+    background-color: #c0392b;
+    border-color: #c0392b;
+    cursor: pointer;
+  }
+  
+  /* Card styling for exams */
+  .exam-card {
+    width: 18rem;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .card-body {
+    padding: 20px;
+  }
+  
+  .card-title {
+    font-size: 1.25rem;
+    font-weight: bold;
+  }
+  
+  .card-text {
+    font-size: 1rem;
+    margin-bottom: 10px;
+  }
+  
+  
+  .btn-primary {
+    background-color: #5e0ec7;
+    border-color: #5e0ec7;
+  }
+  
+  .btn-primary:hover {
+    background-color: #4d0ba7;
+    border-color: #4d0ba7;
+  }
+  
+  .btn-secondary {
+    background-color: #95a5a6;
+    border-color: #95a5a6;
+  }
+  
+  .btn-secondary:disabled {
+    background-color: #95a5a6;
+    border-color: #95a5a6;
+  }
+  
+  .d-flex {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 20px;
+  }
+  
+  /* Responsive styling for small screens */
+  @media (max-width: 768px) {
+    .navbar h5 {
+      font-size: 1rem;
+    }
+  
+    .card {
+      width: 100%;
+    }
+  
+    .d-flex {
+      justify-content: center;
+    }
+  
+    .username {
+      font-size: 1rem; /* Adjust the size for small screens */
+    }
+  
+    .logout-btn {
+      font-size: 0.9rem; /* Adjust logout button font size */
+      padding: 5px 10px;
+    }
+  }
+  

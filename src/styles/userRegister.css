@@ -1,0 +1,120 @@
+/* UserRegister.css */
+
+/* Set the background color for the page */
+body {
+    background-color: #f7f7f7;
+  }
+  
+  /* Header styling for the website name */
+  .site-header {
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+  
+  .site-header h1 {
+    color: #5e0ec7;
+    font-weight: bold;
+    font-size: 2.5rem;
+  }
+  
+  .site-header .tagline {
+    font-size: 1.2rem;
+    color: #5e0ec7;
+    margin-top: -10px;
+  }
+  
+  /* Card container for the form */
+  .card {
+    border-radius: 10px;
+    margin-top: 2rem;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Card body padding */
+  .card-body {
+    padding: 2rem;
+  }
+  
+  /* Form input focus color */
+  input.form-control:focus {
+    border-color: #5e0ec7;
+    box-shadow: 0 0 5px rgba(94, 14, 199, 0.5);
+  }
+  
+  /* Label styling */
+  label.form-label {
+    font-weight: 600;
+    text-align: left;
+    margin-bottom: 0.5rem;
+  }
+  
+  /* Custom button styling for Register */
+  button.btn-success {
+    background-color: #5e0ec7;
+    border-color: #5e0ec7;
+    width: 100%;
+    padding: 10px;
+    font-size: 1rem;
+  }
+  
+  button.btn-success:hover {
+    background-color: #4d0ba7;
+    border-color: #4d0ba7;
+  }
+  
+  /* Error message styling */
+  .text-danger {
+    color: #e74c3c;
+    font-size: 0.875rem;
+    margin-top: 10px;
+  }
+  
+  /* Responsive Form styling */
+  .form-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+  }
+  
+  .form-group {
+    margin-bottom: 1.5rem;
+  }
+  
+  .form-row {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+  
+  .form-row label {
+    width: 30%; /* Set a fixed width for the labels */
+  }
+  
+  .form-row input {
+    width: 65%; /* The input fields take up the remaining space */
+  }
+  
+  /* Small fix for input widths on smaller screens */
+  @media (max-width: 767px) {
+    .form-row label,
+    .form-row input {
+      width: 100%;
+    }
+  }
+  
+  /* Style for the 'Already have an account?' link */
+  .text-center p {
+    font-size: 1rem;
+  }
+  
+  .text-center .text-primary {
+    color: #5e0ec7;
+    font-weight: 600;
+    text-decoration: none;
+  }
+  
+  .text-center .text-primary:hover {
+    text-decoration: underline;
+  }
+  

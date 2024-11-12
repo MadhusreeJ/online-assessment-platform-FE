@@ -36,22 +36,16 @@ const saveExam = async () => {
   }
 };
 const handleLogout = () => {
-  // Perform logout logic here, like clearing session or token
-  localStorage.removeItem('authToken'); // Example
-  navigate('/'); // Redirect to login page
+  localStorage.removeItem('authToken');
+  navigate('/'); 
 };
   return (
     <div style={{marginLeft:200}}>
       
  <nav className="navbar bg-body-tertiary">
         <div className="container-fluid d-flex justify-content-between flex-wrap">
-          {/* Website Name */}
           <span className="navbar-brand mb-0 h1">TestSphere</span>
-
-          {/* Username */}
           <h5 className="username" style={{position:"absolute", paddingLeft:900}}>Admin</h5>
-
-          {/* Logout Button */}
           <button onClick={handleLogout} className="btn btn-danger btn-sm logout-btn" style={{width:80}}>
             Logout
           </button>

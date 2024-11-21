@@ -100,11 +100,11 @@ const Createquiz = () => {
                 <div className='col-lg-12' style={{paddingTop:8, paddingLeft:20}}>
                 <label style={{fontWeight:"bold"}}>Question</label>
                 <textarea className="form-control w-75" aria-label="With textarea"
-                name='question' value={formik.values.question} onChange={formik.handleChange}></textarea>
+                name='question' value={formik.values.question} onChange={formik.handleChange} required></textarea>
                 </div>
                 <div style={{paddingTop:8, paddingLeft:20}}>
                <label style={{fontWeight:"bold"}}>Mark</label>
-                <input className="form-control" style={{width:100}} type='number'
+                <input className="form-control" style={{width:100}} type='number' required
                 name='mark' value={formik.values.mark} onChange={formik.handleChange}/>
                 </div>
                 <div style={{paddingTop:10, paddingLeft:20}}>
@@ -120,7 +120,7 @@ const Createquiz = () => {
                   <input className="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1" 
                   value = {0} onChange={() => checkedOption(0)}/>
                   <label style={{fontWeight:"bold"}}>Option 1</label>
-                  <textarea className="form-control" aria-label="With textarea"
+                  <textarea className="form-control" aria-label="With textarea" required
                   name='options[0].value' value={formik.values.options[0].value} onChange={formik.handleChange}></textarea>
                   </div>
 
@@ -128,7 +128,7 @@ const Createquiz = () => {
                   <input className="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1"
                   value = {1} onChange={() => checkedOption(1)}/>
                   <label style={{fontWeight:"bold"}}>Option 2</label>
-                  <textarea className="form-control" aria-label="With textarea"
+                  <textarea className="form-control" aria-label="With textarea" required
                   name='options[1].value' value={formik.values.options[1].value} onChange={formik.handleChange}></textarea> 
                   </div>
 
@@ -136,7 +136,7 @@ const Createquiz = () => {
                   <input className="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1"
                   value = {2} onChange={() => checkedOption(2)}/>
                   <label style={{fontWeight:"bold"}}>Option 3</label>
-                  <textarea className="form-control" aria-label="With textarea"
+                  <textarea className="form-control" aria-label="With textarea" required
                   name='options[2].value' value={formik.values.options[2].value} onChange={formik.handleChange}></textarea>
                   </div>
 
@@ -144,7 +144,7 @@ const Createquiz = () => {
                   <input className="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1"
                   value = {3} onChange={() => checkedOption(3)}/>
                   <label style={{fontWeight:"bold"}}>Option 4</label>
-                  <textarea className="form-control" aria-label="With textarea"
+                  <textarea className="form-control" aria-label="With textarea" required
                   name='options[3].value' value={formik.values.options[3].value} onChange={formik.handleChange}></textarea>
                   </div>
                   </div> : <div>
@@ -167,7 +167,7 @@ const Createquiz = () => {
 <div>
 <div className='col-lg-12' style={{paddingTop:8, paddingLeft:10}}>
                 <label style={{fontWeight:"bold"}}>Explanation</label>
-                <textarea className="form-control w-75" aria-label="With textarea"
+                <textarea className="form-control w-75" aria-label="With textarea" required
                 name='explanation' value={formik.values.explanation} onChange={formik.handleChange}></textarea>
                 </div>
   </div>

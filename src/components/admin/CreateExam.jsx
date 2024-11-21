@@ -55,15 +55,15 @@ const handleLogout = () => {
       <form className="row">
   <div className="col-lg-12" style={{padding:20}}>
     <label style={{fontWeight:"bold"}}>Course</label>
-    <input type="text" className="form-control w-25" value={course} onChange={handleChangeCourse}/>
+    <input type="text" className="form-control w-25" required value={course} onChange={handleChangeCourse}/>
   </div>
   <div className="col-lg-12" style={{padding:20}}>
     <label style={{fontWeight:"bold"}}>Topic</label>
-    <input type="text" className="form-control w-25" value={topic} onChange={handleChangeTopic}/>
+    <input type="text" className="form-control w-25" required value={topic} onChange={handleChangeTopic}/>
   </div>
   <div className="col-lg-12" style={{padding:20}}>
     <label style={{fontWeight:"bold"}}>Duration (in mins)</label>
-    <input type="number" className="form-control w-25"  onChange={handleChangeDuration}/>
+    <input type="number" className="form-control w-25" required onChange={handleChangeDuration}/>
   </div>
   <div className="col-lg-12" style={{padding:20}}>
     <button type="submit" className="btn mb-3" style={{backgroundColor:"#5e0ec7", fontWeight:"bold"}} onClick={saveExam}>Create Quiz</button>
